@@ -11,6 +11,21 @@ three2one = {
     'Thr':'T','Trp':'W','Tyr':'Y','Val':'V','Ter':'*','Sec':'U','Pyl':'O','Xaa':'X'
 }
 
+def convert_to_short(prot_change: str) -> str | None:
+    """
+    Convert 'p.Arg132His' → 'p.R132H'. Return None if not a
+    standard missense HGVS string.
+    """
+    m = re.match(r'^p\.([A-Z][a-z]{2})(\d+)([A-Z][a-z]{2})$', prot_change)
+    if not m:
+        return None
+    ref3, pos, alt3 = m.groups()
+    if ref3 in three2one and alt3 in three2one:
+        return f"p.{three2one[ref3]}{pos}{three2one[alt3]}"
+    return None
+
+
+
 @functools.lru_cache(maxsize=1)
 def pathogenic_aa_changes() -> set[str]:
     ok = {"Pathogenic", "Likely_pathogenic", "Pathogenic/Likely_pathogenic"}
@@ -58,21 +73,28 @@ SELECT
     ref,
     alt,
     COALESCE("HGVSp_VEP", "HGVSp_snpEff") AS aa_change,
-    TRY_CAST("gnomAD4.1_joint_AF" AS DOUBLE)  AS AF,
+    TRY_CAST("gnomAD4.1_joint_AF" AS DOUBLE) AS AF,
+    TRY_CAST("gnomAD4.1_joint_POPMAX_AF" AS DOUBLE) AS "gnomAD4.1_joint_POPMAX_AF",
+    TRY_CAST(CADD_phred AS DOUBLE) AS CADD_phred,
     SIFT_pred,
     Polyphen2_HDIV_pred,
+    MetaLR_pred,
+    TRY_CAST(MetaLR_score AS DOUBLE) AS MetaLR_score,
+    TRY_CAST("fathmm-XF_coding_score" AS DOUBLE) AS "fathmm-XF_coding_score",
+    "fathmm-XF_coding_pred",
+    TRY_CAST(AlphaMissense_score AS DOUBLE) AS AlphaMissense_score,
     MutationTaster_pred,
     MutationAssessor_pred,
     PROVEAN_pred,
     MetaSVM_pred,
-    MetaLR_pred,
     TRY_CAST(REVEL_score AS DOUBLE) AS REVEL_score
 FROM read_csv_auto(
     '{DBNSFP}',
     delim='\t',
     header=TRUE,
     compression='gzip',
-    types={{'#chr': 'VARCHAR'}}
+    types={{'#chr': 'VARCHAR'}},
+    nullstr='.'
 )
 WHERE aaref NOT IN ('', '.')
   AND aaalt NOT IN ('', '.')
@@ -90,15 +112,15 @@ LIMIT {n_samples}
 
 
 # 2. ACMG rule functions
-def PM2(af: float | None) -> bool:
-    return af is None or af < 1e-4     # “absent / exceedingly rare”
+def PM2(af_popmax: float | None) -> bool:
+    return af_popmax is None or af_popmax < 1e-4   # “absent / exceedingly rare”
 
-def BS1(af: float | None) -> bool:
-    return af is not None and (0.0001 <= af < 0.05)
+def BS1(af_popmax: float | None) -> bool:
+    return af_popmax is not None and (0.0001 <= af_popmax < 0.05)
 
 
-def BA1(af: float | None) -> bool:
-    return af is not None and af >= 0.05   # “common” (stand-alone benign)
+def BA1(af_popmax: float | None) -> bool:
+    return af_popmax is not None and af_popmax >= 0.05  # “common” (stand-alone benign)
 
 def PP3(row) -> bool:
     """
@@ -121,10 +143,14 @@ def PP3(row) -> bool:
 
 def PS1(row) -> bool:
     """
-    True if the *exact same amino-acid change* is already in ClinVar and
-    labeled Pathogenic / Likely_pathogenic – regardless of nucleotide.
+    True if ANY one of the true protein changes (from VEP/snpEff)
+    matches a ClinVar pathogenic/likely_pathogenic amino-acid change.
     """
-    aa = row.get("aa_change")       # e.g. 'p.R117H'
-    return aa in pathogenic_aa_changes()
+    raw = row.get("aa_change") or ""
+    for prot in raw.split(";"):
+        short = convert_to_short(prot.strip())
+        if short and short in pathogenic_aa_changes():
+            return True
+    return False
 
 
