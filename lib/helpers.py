@@ -38,7 +38,7 @@ def pathogenic_aa_changes() -> set[str]:
             name = row["Name"]
             m = re.search(r'\((p\.([A-Z][a-z]{2})(\d+)([A-Z][a-z]{2}|\*))\)', name)
             if m:
-                prot_change = m.group(1) # full "p.Cys282Tyr"
+                prot_change = m.group(1) # full "p.Cys282Tyr" 
                 ref3 = m.group(2)
                 pos  = m.group(3)
                 alt3 = m.group(4)
@@ -51,11 +51,10 @@ def pathogenic_aa_changes() -> set[str]:
 
 
 
-
 BASE   = pathlib.Path(__file__).resolve().parents[1] / "data"
 DBNSFP = BASE / "dbNSFP5.2a_grch38.gz"   # 40 GB file
 
-# 1. Randomly sample 100 missense SNVs from dbNSFP
+# 1. Randomly sample X missense SNVs from dbNSFP
 
 def sample_missense(n_samples: int = 100) -> pd.DataFrame:
     """

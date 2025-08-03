@@ -34,6 +34,8 @@ PROMPT_TEMPLATE = textwrap.dedent("""\
     • HGVS (protein-level): {hgvs}
     • Allele frequency (gnomAD popmax): {af_popmax}
     • In-silico summary: {insilico} 
+    {ps1_evidence}                           
+                                
 
     Tasks:
     1. Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
@@ -43,6 +45,10 @@ PROMPT_TEMPLATE = textwrap.dedent("""\
        - PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
        - BS1  (allele frequency is too high for the disorder)
        - BA1  (stand-alone benign frequency; very common)
+                                  
+    Special rule for PS1:
+    - Only set PS1 to true if explicit evidence is provided (above) that a different DNA change at this codon (resulting in the same amino acid change) is known to be pathogenic. If not, set PS1 to false.
+
     3. Return ONLY a single JSON object with this exact schema and lowercase booleans:
 
     {{
@@ -94,6 +100,8 @@ def build_insilico(row: pd.Series) -> str:
     if "AlphaMissense_score" in row and pd.notna(row["AlphaMissense_score"]):
         parts.append(f"AlphaMissense={fmt_float(row['AlphaMissense_score'], 3)}")
 
+    
+
     return "; ".join(parts) if parts else "NA"
 
 def build_prompt_row(row: pd.Series) -> dict:
@@ -102,22 +110,31 @@ def build_prompt_row(row: pd.Series) -> dict:
     af_popmax = fmt_float(row["AF_popmax"], 3)  # AF_popmax column in my inputs
     insilico  = build_insilico(row)
 
+
+    ps1_evidence = ""
+    if "PS1" in row and bool(row["PS1"]):
+        ps1_evidence = (
+            "• PS1 evidence: A different DNA change at this codon (resulting in the same amino acid change) "
+            "is known to be pathogenic."
+        )
+
     prompt    = PROMPT_TEMPLATE.format(
         hgvs=hgvs,
         af_popmax=af_popmax,
         insilico=insilico,
+        ps1_evidence=ps1_evidence
+
     )
 
     record = {
-        "vid": row["variant"],          # unique ID to track
+        "vid": row["variant"],   
         "hgvs": hgvs,
         "af_popmax": af_popmax,
         "insilico_summary": insilico,
         "prompt": prompt
     }
 
-    # (Optional) keep truth columns here for downstream scoring scripts.
-    # Just comment out if you truly don't want them in the JSONL.
+   
     for col in ["PM2", "PP3", "PS1", "BS1", "BA1", "label"]:
         if col in row:
             record[col] = row[col]
@@ -153,6 +170,6 @@ def main():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    # Add --inputs or --out flags here if you want flexibility
+   
     _ = parser.parse_args()
     main()
