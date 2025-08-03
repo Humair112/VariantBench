@@ -11,6 +11,14 @@ Usage examples:
     python scripts/infer_llm.py --provider anthropic --model claude-3-opus-20240229
     python scripts/infer_llm.py --provider hf --endpoint http://localhost:8080/v1/completions --model llama-3-70b-instruct
 """
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+try:
+    import google.generativeai as genai
+except Exception:
+    genai = None
 
 import argparse, json, pathlib, re, time
 import orjson
@@ -37,7 +45,7 @@ RESULTS = ROOT / "results"
 PROMPTS_JSONL = RESULTS / "variantbench_100_prompts.jsonl"
 
 
-# ----------------------- Utilities -----------------------
+# Utilities -----------------------
 
 def iter_jsonl(path: pathlib.Path) -> Iterable[Dict[str, Any]]:
     with path.open("r", encoding="utf-8") as fh:
@@ -52,17 +60,22 @@ def write_jsonl(path: pathlib.Path, rows: Iterable[Dict[str, Any]]) -> None:
 
 JSON_BLOCK_RE = re.compile(r"\{.*\}", re.DOTALL)
 
-def extract_first_json(text: str) -> Dict[str, Any] | None:
-    """Grab the first {...} block and json.loads it."""
+def extract_first_json(text: str) -> dict | None:
+    if not text:
+        print("WARNING: Empty response from LLM")
+        return None
     m = JSON_BLOCK_RE.search(text)
     if not m:
+        print(f"WARNING: No JSON found in response:\n{text[:200]}")
         return None
     try:
         return json.loads(m.group(0))
-    except Exception:
+    except Exception as e:
+        print(f"WARNING: Error parsing JSON: {e}\n{text[:200]}")
         return None
 
-# ----------------------- Clients -------------------------
+
+# Clients 
 
 @dataclass
 class LLMClient:
@@ -79,6 +92,8 @@ class LLMClient:
             return self._openai(prompt)
         elif self.provider == "anthropic":
             return self._anthropic(prompt)
+        elif self.provider == "gemini":
+            return self._gemini(prompt)
         elif self.provider == "hf":
             return self._hf(prompt)
         else:
@@ -114,15 +129,14 @@ class LLMClient:
     def _hf(self, prompt: str) -> str:
         if not self.endpoint:
             raise RuntimeError("HF/custom provider requires --endpoint")
-        # Two common APIs exist: (a) OpenAI-compatible /v1/chat/completions; (b) text-generation-inference /v1/completions
-        # We'll support both; detect by path.
+        
         if self.endpoint.endswith("/chat/completions"):
             payload = {
                 "model": self.model,
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": self.temperature,
             }
-        else:  # /v1/completions style
+        else:  
             payload = {
                 "model": self.model,
                 "prompt": prompt,
@@ -135,22 +149,49 @@ class LLMClient:
             r = client.post(self.endpoint, headers=headers, json=payload)
             r.raise_for_status()
             data = r.json()
-        # Try to normalize return text
+
         if "choices" in data:
-            # OpenAI/TGI like
+
             choice = data["choices"][0]
             if "message" in choice:
                 return choice["message"]["content"]
             return choice.get("text", "")
         return data.get("generated_text", "")
+    
+    def _gemini(self, prompt: str) -> str:
+        if genai is None:
+            raise RuntimeError("google-generativeai package not installed")
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            raise RuntimeError("Set GEMINI_API_KEY in your environment or .env")
+        genai.configure(api_key=api_key)
+
+        model = genai.GenerativeModel(self.model)
+        resp = model.generate_content(
+            prompt,
+            generation_config={
+                 "temperature": self.temperature,
+                 "max_output_tokens": 4500
+
+            }
+        )
+        if not hasattr(resp, "text") or not resp.text:
+            print("WARNING: Gemini returned empty response!")
+            print("Prompt was:\n", prompt)
+            print("Full response object:\n", resp)
+
+         # AI Studio returns a Response object with .text for plain text
+        return getattr(resp, "text", "") or ""
+
+    
+# gemini-2.5-flash
 
 
-# ----------------------- Main ----------------------------
-
+# Main 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--provider", required=True, choices=["openai", "anthropic", "hf"],
-                    help="Which API to call")
+    ap.add_argument("--provider", required=True, choices=["openai", "anthropic", "hf", "gemini"],
+                help="Which API to call")
     ap.add_argument("--model", required=True, help="Model name")
     ap.add_argument("--endpoint", default=None,
                     help="For HF/custom endpoints (RunPod/vLLM/TGI). Example: http://<pod-url>/v1/chat/completions")
@@ -177,6 +218,7 @@ def main():
 
         # Call model
         text = client.generate(prompt)
+        print(f"Finished vid={vid}")  # <-- ADD THIS LINE
 
         # Parse JSON
         parsed = extract_first_json(text)
