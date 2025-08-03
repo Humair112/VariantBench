@@ -1,0 +1,18 @@
+# Ignore Python venv
+.venv/
+
+# Ignore pycache
+__pycache__/
+**/__pycache__/
+
+# Ignore data folder entirely
+data/
+
+
+
+# VSCode settings
+.vscode/
+
+# Other junk
+*.log
+*.tmp
