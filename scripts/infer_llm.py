@@ -44,8 +44,25 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results"
 PROMPTS_JSONL = RESULTS / "variantbench_100_prompts.jsonl"
 
+CONTEXT_LIMIT = 4096  
+OUTPUT_TOKEN_HARD_CAP = 4500 
 
-# Utilities -----------------------
+def estimate_tokens(text: str) -> int:
+
+    return int(len(text.split()) * 1.3)
+
+def safe_max_output_tokens(prompt: str, context_limit=CONTEXT_LIMIT, min_output_tokens=300, max_output_tokens=OUTPUT_TOKEN_HARD_CAP) -> int:
+    prompt_tokens = estimate_tokens(prompt)
+    out_tokens = context_limit - prompt_tokens
+    # Never allow more than the hard output cap
+    capped = min(max_output_tokens, out_tokens)
+    if capped < min_output_tokens:
+        print(f"Prompt too long (tokens={prompt_tokens})! Forcing max_output_tokens={min_output_tokens}")
+        return min_output_tokens
+    return capped
+
+
+# Utilities 
 
 def iter_jsonl(path: pathlib.Path) -> Iterable[Dict[str, Any]]:
     with path.open("r", encoding="utf-8") as fh:
@@ -64,6 +81,10 @@ def extract_first_json(text: str) -> dict | None:
     if not text:
         print("WARNING: Empty response from LLM")
         return None
+
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("```")[1] if "```" in text else text
     m = JSON_BLOCK_RE.search(text)
     if not m:
         print(f"WARNING: No JSON found in response:\n{text[:200]}")
@@ -73,6 +94,7 @@ def extract_first_json(text: str) -> dict | None:
     except Exception as e:
         print(f"WARNING: Error parsing JSON: {e}\n{text[:200]}")
         return None
+
 
 
 # Clients 
@@ -161,30 +183,49 @@ class LLMClient:
     def _gemini(self, prompt: str) -> str:
         if genai is None:
             raise RuntimeError("google-generativeai package not installed")
-        api_key = os.environ.get("GEMINI_API_KEY")
+        api_key = os.environ.get("GEMINI_API_KEY") 
         if not api_key:
             raise RuntimeError("Set GEMINI_API_KEY in your environment or .env")
         genai.configure(api_key=api_key)
 
         model = genai.GenerativeModel(self.model)
-        resp = model.generate_content(
-            prompt,
-            generation_config={
-                 "temperature": self.temperature,
-                 "max_output_tokens": 4500
+        # Dynamic token budgeting
+        max_output_tokens = safe_max_output_tokens(prompt)
+        print(f"Prompt tokens (est): {estimate_tokens(prompt)} | max_output_tokens: {max_output_tokens}")
 
-            }
-        )
-        if not hasattr(resp, "text") or not resp.text:
-            print("WARNING: Gemini returned empty response!")
-            print("Prompt was:\n", prompt)
-            print("Full response object:\n", resp)
+        # ----------------------------------------------------
+        try:
+            resp = model.generate_content(
+                prompt,
+                generation_config={
+                    "temperature": self.temperature,
+                    "max_output_tokens": max_output_tokens
+                }
+            )
 
-         # AI Studio returns a Response object with .text for plain text
-        return getattr(resp, "text", "") or ""
+            try: 
+                if hasattr(resp, "candidates") and resp.candidates:
+                    candidate = resp.candidates[0]
+                    finish_reason = getattr(candidate, "finish_reason", None)
+                    print(f"Gemini finish_reason: {finish_reason}")
+            except Exception as e:
+                print(f"Could not extract finish_reason: {e}")
+        except Exception as e:
+            print(f"Exception during Gemini call: {e}")
+            return ""
+        try:
+            if hasattr(resp, "text") and resp.text:
+                return resp.text
+        except Exception as e:
+            print(f"Error extracting Gemini text: {e}")
+            return ""
+        print("WARNING: Gemini returned empty response!")
+        print("Prompt was:\n", prompt)
+        print("Full response object:\n", resp)
+        return ""
 
     
-# gemini-2.5-flash
+
 
 
 # Main 
@@ -203,8 +244,19 @@ def main():
 
     in_path  = pathlib.Path(args.input)
     prefix   = args.out_prefix or args.model.replace("/", "_")
-    raw_out  = RESULTS / f"{prefix}_raw.jsonl"
-    parsed_out = RESULTS / f"{prefix}_parsed.jsonl"
+
+    # Extract Track A/B from input filename 
+    match = re.search(r'track([AB])', str(in_path), re.IGNORECASE)
+    if match:
+        track = f"_track{match.group(1).upper()}"
+    else:
+        track = ""
+
+    OUTDIR = RESULTS / f"{args.provider.capitalize()}Results"
+    OUTDIR.mkdir(exist_ok=True)
+
+    raw_out    = OUTDIR / f"{prefix}{track}_raw.jsonl"
+    parsed_out = OUTDIR / f"{prefix}{track}_parsed.jsonl"
 
     client = LLMClient(provider=args.provider, model=args.model,
                        endpoint=args.endpoint, temperature=0.0)
@@ -218,7 +270,7 @@ def main():
 
         # Call model
         text = client.generate(prompt)
-        print(f"Finished vid={vid}")  # <-- ADD THIS LINE
+        print(f"Finished vid={vid}")  # 
 
         # Parse JSON
         parsed = extract_first_json(text)

@@ -1,48 +1,41 @@
 import pandas as pd
+from lib.helpers import PM2, BS1, BA1, PP3, PS1
 
-# Update this path to your results file if needed for debugging
-#df = pd.read_csv(r"C:\variantbench\results\acmg_algorithmic.csv")
-df = pd.read_csv(r"C:\variantbench\results\acmg_debug.csv")
+df = pd.read_csv(r"C:\variantbench\results\FrozenBenchmark\variantbench_100_gold.csv")
 
-# Converting AF to float just in case
-df['AF'] = df['AF'].astype(float)
+if "gnomAD4.1_joint_POPMAX_AF" in df.columns:
+    df = df.rename(columns={"gnomAD4.1_joint_POPMAX_AF": "AF_popmax"})
 
-# Defining the AF cutoffs in pipeline
-PM2_cutoff = 0.0001
-BS1_cutoff_low = 0.0001
-BS1_cutoff_high = 0.05
-BA1_cutoff = 0.05
+af_col = "AF_popmax"
+required_cols = ["variant", af_col, "PM2", "BS1", "BA1", "PP3", "PS1"]
 
-print("\nRows where PM2 is TRUE and (AF is None or AF < 1e-4) (should be TRUE):")
-print(df[(df["PM2"] == True) & ((df["AF"].isnull()) | (df["AF"] < 1e-4))][["variant", "AF", "PM2"]])
+missing = [col for col in required_cols if col not in df.columns]
+if missing:
+    raise ValueError(f"Missing columns in file: {missing}")
 
-print("\nRows where PM2 is FALSE but AF is None or AF < 1e-4 (should be empty):")
-print(df[(df["PM2"] == False) & ((df["AF"].isnull()) | (df["AF"] < 1e-4))][["variant", "AF", "PM2"]])
+df['PM2_check'] = df[af_col].apply(PM2)
+df['BS1_check'] = df[af_col].apply(BS1)
+df['BA1_check'] = df[af_col].apply(BA1)
+df['PP3_check'] = df.apply(PP3, axis=1)
+df['PS1_check'] = df.apply(PS1, axis=1)
 
-print("\nRows where PM2 is TRUE but AF >= 1e-4 (should be empty):")
-print(df[(df["PM2"] == True) & (df["AF"] >= 1e-4)][["variant", "AF", "PM2"]])
+flags = ["PM2", "BS1", "BA1", "PP3", "PS1"]
 
-print("\nRows where BA1 is TRUE and AF >= 0.05 (should be TRUE):")
-print(df[(df['AF'] >= BA1_cutoff) & (df['BA1'] == True)])
+any_errors = False
+for flag in flags:
+    mismatches = df[df[flag] != df[f"{flag}_check"]]
+    if not mismatches.empty:
+        any_errors = True
+        print(f"\n⚠️ {flag} mismatches ({len(mismatches)} rows):")
+        print(mismatches[["variant", af_col, flag, f"{flag}_check"]])
+    else:
+        print(f"✅ {flag}: All values match!")
 
-print("\nRows where BA1 is FALSE but AF >= 0.05 (should be empty):")
-print(df[(df['AF'] >= BA1_cutoff) & (df['BA1'] == False)])
+if not any_errors:
+    print("\n🎉 All flags are correct and match your helpers.py logic.")
+else:
+    print("\n⚠️ There are mismatches above. Review those rows and double-check logic or data.")
 
-print("\nRows where BS1 is TRUE and 0.0001 <= AF < 0.05 (should be TRUE):")
-print(df[(df['AF'] >= BS1_cutoff_low) & (df['AF'] < BS1_cutoff_high) & (df['BS1'] == True)])
-
-print("\nRows where BS1 is FALSE but 0.0001 <= AF < 0.05 (should be empty):")
-print(df[(df['AF'] >= BS1_cutoff_low) & (df['AF'] < BS1_cutoff_high) & (df['BS1'] == False)])
-
-print("\nRows where PP3 is TRUE:")
-print(df[df["PP3"] == True][["variant", "SIFT_pred", "Polyphen2_HDIV_pred", "MutationTaster_pred",
-                            "MutationAssessor_pred", "PROVEAN_pred", "MetaSVM_pred",
-                            "MetaLR_pred", "REVEL_score", "PP3"]])
-
-print("\nRows where PP3 is FALSE:")
-print(df[df["PP3"] == False][["variant", "SIFT_pred", "Polyphen2_HDIV_pred", "MutationTaster_pred",
-                             "MutationAssessor_pred", "PROVEAN_pred", "MetaSVM_pred",
-                             "MetaLR_pred", "REVEL_score", "PP3"]])
-
-
-
+import sys
+if any_errors:
+    sys.exit(1)

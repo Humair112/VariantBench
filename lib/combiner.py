@@ -8,7 +8,7 @@ Light-weight ACMG/AMP combiner for 5 rules:
 
 Order of precedence:
   1) Benign evidence first (BA1, BS1) – frequency trumps.
-  2) Then pathogenic patterns.
+  2) Then pathogenic patterns.  
   3) Otherwise VUS.
 
 This mirrors a trimmed InterVar/ACMG table and prevents conflicts like
@@ -24,7 +24,7 @@ def combine(flags: Dict[str, bool]) -> str:
     PM2 = flags.get("PM2", False)
     PP3 = flags.get("PP3", False)
 
-    # ---------------- Benign side ----------------
+    # Benign side 
     if BA1:
         return "Benign"  # Stand-alone benign
 
@@ -35,7 +35,7 @@ def combine(flags: Dict[str, bool]) -> str:
         # Conflicting: frequency says benign, others say pathogenic
         return "VUS"
 
-    # ------------- Pathogenic side --------------
+    # Pathogenic side 
     strong   = PS1
     moderate = PM2
     support  = PP3

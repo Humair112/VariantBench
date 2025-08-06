@@ -1,0 +1,3700 @@
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gly475Ser
+• Allele frequency (gnomAD popmax): 5.08e-06
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.99(D); FATHMM=0.96(D); AlphaMissense=0.785
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Glu78Lys
+• Allele frequency (gnomAD popmax): 5.35e-05
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.27(T); FATHMM=0.91(D); AlphaMissense=0.483
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala703Thr
+• Allele frequency (gnomAD popmax): 1.96e-05
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=NA; MetaLR=0.61(D); FATHMM=0.5(D); AlphaMissense=0.252
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Phe448Leu
+• Allele frequency (gnomAD popmax): 3.39e-06
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=D; MetaLR=0.63(D); FATHMM=0.38(N); AlphaMissense=0.992
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Cys243Arg
+• Allele frequency (gnomAD popmax): 1.1e-05
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=B; MetaLR=0.0023(T); FATHMM=0.52(D); AlphaMissense=0.557
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Glu75Asp
+• Allele frequency (gnomAD popmax): 3e-05
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.46(T); FATHMM=0.79(D); AlphaMissense=0.989
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala141Thr
+• Allele frequency (gnomAD popmax): 1.77e-06
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.011(T); FATHMM=0.095(N); AlphaMissense=0.271
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Leu22Pro
+• Allele frequency (gnomAD popmax): 1.67e-05
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=D; MetaLR=0.032(T); FATHMM=0.078(N); AlphaMissense=0.146
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ile380Val
+• Allele frequency (gnomAD popmax): 8.49e-07
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=P; MetaLR=0.87(D); FATHMM=0.43(N); AlphaMissense=0.321
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser146Phe
+• Allele frequency (gnomAD popmax): 8.49e-07
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.6(D); FATHMM=0.82(D); AlphaMissense=0.992
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg171Trp
+• Allele frequency (gnomAD popmax): 1.33e-05
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=B; MetaLR=0.21(T); FATHMM=0.69(D); AlphaMissense=0.527
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala218Val
+• Allele frequency (gnomAD popmax): 3.31e-05
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.74(D); FATHMM=0.96(D); AlphaMissense=0.757
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg242Gln
+• Allele frequency (gnomAD popmax): 1.34e-05
+• In-silico summary: CADD=3e+01; SIFT=T; PolyPhen=D; MetaLR=0.57(D); FATHMM=0.91(D); AlphaMissense=0.538
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg239Cys
+• Allele frequency (gnomAD popmax): 1.34e-05
+• In-silico summary: CADD=3e+01; SIFT=T; PolyPhen=B; MetaLR=0.76(D); FATHMM=0.85(D); AlphaMissense=0.226
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala342Val
+• Allele frequency (gnomAD popmax): 1.67e-05
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.59(D); FATHMM=0.96(D); AlphaMissense=0.949
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Leu403Pro
+• Allele frequency (gnomAD popmax): 8.48e-07
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.28(T); FATHMM=0.93(D); AlphaMissense=0.994
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Cys241Gly
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=P; MetaLR=0.21(T); FATHMM=0.82(D); AlphaMissense=0.273
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Thr627Ala
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.15(T); FATHMM=0.88(D); AlphaMissense=0.172
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro512Leu
+• Allele frequency (gnomAD popmax): 2.23e-05
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=P; MetaLR=0.87(D); FATHMM=0.14(N); AlphaMissense=0.0803
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Cys330Tyr
+• Allele frequency (gnomAD popmax): 2.54e-06
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.86(D); FATHMM=0.75(D); AlphaMissense=0.918
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Tyr207His
+• Allele frequency (gnomAD popmax): 1.1e-05
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.94(D); FATHMM=0.91(D); AlphaMissense=0.609
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala56Val
+• Allele frequency (gnomAD popmax): 2.23e-05
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=D; MetaLR=0.13(T); FATHMM=0.15(N); AlphaMissense=0.222
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gly536Arg
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=1; SIFT=D; PolyPhen=P; MetaLR=0.0027(T); FATHMM=0.037(N); AlphaMissense=0.237
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Leu61Val
+• Allele frequency (gnomAD popmax): 8.48e-07
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=B; MetaLR=0.55(D); FATHMM=0.25(N); AlphaMissense=0.307
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Lys71Gln
+• Allele frequency (gnomAD popmax): 1.56e-05
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=D; MetaLR=0.12(T); FATHMM=0.06(N); AlphaMissense=0.856
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Asp338Asn
+• Allele frequency (gnomAD popmax): 9.15e-07
+• In-silico summary: CADD=2; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=NA(NA); AlphaMissense=0.0975
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser35Ile
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=P; MetaLR=0.028(T); FATHMM=0.057(N); AlphaMissense=0.181
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser234Cys
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=1e+01; SIFT=D; PolyPhen=B; MetaLR=0.0011(T); FATHMM=0.038(N); AlphaMissense=0.0774
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Asp439Glu
+• Allele frequency (gnomAD popmax): 1.1e-05
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=D; MetaLR=0.85(D); FATHMM=0.5(D); AlphaMissense=0.971
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala118Val
+• Allele frequency (gnomAD popmax): 8.67e-07
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.29(T); FATHMM=0.94(D); AlphaMissense=0.869
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser590Cys
+• Allele frequency (gnomAD popmax): 7.92e-05
+• In-silico summary: CADD=3e+01; SIFT=NA; PolyPhen=D; MetaLR=0.89(D); FATHMM=0.91(D); AlphaMissense=0.645
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg66Gly
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=1; SIFT=NA; PolyPhen=P; MetaLR=0.025(T); FATHMM=0.088(N); AlphaMissense=0.113
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Trp516Cys
+• Allele frequency (gnomAD popmax): 8.48e-07
+• In-silico summary: CADD=3e+01; SIFT=NA; PolyPhen=NA; MetaLR=0.66(D); FATHMM=0.93(D); AlphaMissense=0.999
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Asp149Asn
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.91(D); FATHMM=0.82(D); AlphaMissense=1
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Trp150Arg
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=2e+01; SIFT=NA; PolyPhen=D; MetaLR=0.55(D); FATHMM=0.47(N); AlphaMissense=0.81
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg91Gln
+• Allele frequency (gnomAD popmax): 2.23e-05
+• In-silico summary: CADD=2e+01; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=0.46(N); AlphaMissense=0.139
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro536Arg
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=P; MetaLR=0.7(D); FATHMM=0.84(D); AlphaMissense=0.134
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Leu866Phe
+• Allele frequency (gnomAD popmax): 8.84e-07
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=D; MetaLR=0.33(T); FATHMM=0.72(D); AlphaMissense=0.901
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Asn590Lys
+• Allele frequency (gnomAD popmax): 8.48e-07
+• In-silico summary: CADD=1e+01; SIFT=D; PolyPhen=D; MetaLR=0.1(T); FATHMM=0.51(D); AlphaMissense=0.815
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser111Asn
+• Allele frequency (gnomAD popmax): 2.63e-05
+• In-silico summary: CADD=0.9; SIFT=T; PolyPhen=B; MetaLR=0.11(T); FATHMM=0.15(N); AlphaMissense=0.0781
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser103Phe
+• Allele frequency (gnomAD popmax): 2.62e-06
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=NA; MetaLR=0.12(T); FATHMM=0.034(N); AlphaMissense=0.212
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gly104Ala
+• Allele frequency (gnomAD popmax): 0.000166
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.99(D); FATHMM=0.92(D); AlphaMissense=0.438
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Lys49Arg
+• Allele frequency (gnomAD popmax): 8.47e-07
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.0082(T); FATHMM=0.22(N); AlphaMissense=0.0659
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala190Val
+• Allele frequency (gnomAD popmax): 4.24e-06
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.081(T); FATHMM=0.13(N); AlphaMissense=0.0727
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Val27Ile
+• Allele frequency (gnomAD popmax): 3.39e-06
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.063(T); FATHMM=0.093(N); AlphaMissense=0.0965
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Leu816Pro
+• Allele frequency (gnomAD popmax): 1.69e-06
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.016(T); FATHMM=0.43(N); AlphaMissense=0.183
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala15Thr
+• Allele frequency (gnomAD popmax): 3.3e-05
+• In-silico summary: CADD=6; SIFT=T; PolyPhen=B; MetaLR=0.058(T); FATHMM=0.035(N); AlphaMissense=0.0916
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro333Thr
+• Allele frequency (gnomAD popmax): 9.32e-06
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.14(T); FATHMM=0.094(N); AlphaMissense=0.121
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.His1039Tyr
+• Allele frequency (gnomAD popmax): 1.1e-05
+• In-silico summary: CADD=3e+01; SIFT=T; PolyPhen=NA; MetaLR=0.47(T); FATHMM=0.85(D); AlphaMissense=0.0698
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Asn319Thr
+• Allele frequency (gnomAD popmax): 1.34e-05
+• In-silico summary: CADD=2e+01; SIFT=NA; PolyPhen=NA; MetaLR=0.33(T); FATHMM=0.5(N); AlphaMissense=0.0787
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Glu264Ter
+• Allele frequency (gnomAD popmax): 1.11e-05
+• In-silico summary: CADD=4e+01; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=0.16(N)
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala6312Pro
+• Allele frequency (gnomAD popmax): 8.72e-07
+• In-silico summary: CADD=0.3; SIFT=NA; PolyPhen=NA; MetaLR=0.021(T); FATHMM=0.058(N); AlphaMissense=0.133
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Tyr173Ter
+• Allele frequency (gnomAD popmax): 1.29e-05
+• In-silico summary: CADD=3e+01; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=0.34(N)
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gln935His
+• Allele frequency (gnomAD popmax): 2.71e-05
+• In-silico summary: CADD=4; SIFT=T; PolyPhen=B; MetaLR=0.0024(T); FATHMM=NA(NA); AlphaMissense=0.219
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Lys27Asn
+• Allele frequency (gnomAD popmax): 8.72e-07
+• In-silico summary: CADD=3; SIFT=D; PolyPhen=B; MetaLR=0.017(T); FATHMM=0.057(N); AlphaMissense=0.256
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala773Gly
+• Allele frequency (gnomAD popmax): 1.36e-05
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.085(T); FATHMM=0.13(N); AlphaMissense=0.114
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.His502Gln
+• Allele frequency (gnomAD popmax): 2.04e-05
+• In-silico summary: CADD=2e+01; SIFT=NA; PolyPhen=NA; MetaLR=0.56(D); FATHMM=0.44(N); AlphaMissense=0.78
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Glu129Ala
+• Allele frequency (gnomAD popmax): 0.000233
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.26(T); FATHMM=0.88(D); AlphaMissense=0.358
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Lys535Arg
+• Allele frequency (gnomAD popmax): 1.1e-05
+• In-silico summary: CADD=1e+01; SIFT=T; PolyPhen=B; MetaLR=0.12(T); FATHMM=0.059(N); AlphaMissense=0.0781
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Val49Leu
+• Allele frequency (gnomAD popmax): 1.17e-06
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.049(T); FATHMM=0.11(N); AlphaMissense=0.107
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser92Asn
+• Allele frequency (gnomAD popmax): 0.000627
+• In-silico summary: CADD=1e+01; SIFT=NA; PolyPhen=P; MetaLR=0.0066(T); FATHMM=0.038(N); AlphaMissense=0.127
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro127Leu
+• Allele frequency (gnomAD popmax): 0.000164
+• In-silico summary: CADD=0.6; SIFT=T; PolyPhen=B; MetaLR=0.0038(T); FATHMM=NA(NA); AlphaMissense=0.0783
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser364Gly
+• Allele frequency (gnomAD popmax): 0.0329
+• In-silico summary: CADD=0.4; SIFT=NA; PolyPhen=NA; MetaLR=0.16(T); FATHMM=0.049(N); AlphaMissense=0.109
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ile227Val
+• Allele frequency (gnomAD popmax): 0.000113
+• In-silico summary: CADD=0.007; SIFT=T; PolyPhen=B; MetaLR=0.019(T); FATHMM=0.03(N); AlphaMissense=0.0568
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala1154Thr
+• Allele frequency (gnomAD popmax): 0.000168
+• In-silico summary: CADD=1e+01; SIFT=T; PolyPhen=B; MetaLR=0.54(D); FATHMM=0.053(N); AlphaMissense=0.0689
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg149His
+• Allele frequency (gnomAD popmax): 0.000225
+• In-silico summary: CADD=0.6; SIFT=T; PolyPhen=NA; MetaLR=0.018(T); FATHMM=0.079(N); AlphaMissense=0.0852
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala1038Val
+• Allele frequency (gnomAD popmax): 0.00551
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.48(T); FATHMM=0.94(D); AlphaMissense=0.164
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.His133Tyr
+• Allele frequency (gnomAD popmax): 0.00132
+• In-silico summary: CADD=2e+01; SIFT=D; PolyPhen=B; MetaLR=0.24(T); FATHMM=0.16(N); AlphaMissense=0.0958
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg960Gln
+• Allele frequency (gnomAD popmax): 0.000118
+• In-silico summary: CADD=1e+01; SIFT=T; PolyPhen=NA; MetaLR=0.012(T); FATHMM=0.063(N); AlphaMissense=0.0997
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Asp289Glu
+• Allele frequency (gnomAD popmax): 0.000488
+• In-silico summary: CADD=6; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=NA(NA)
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala177Thr
+• Allele frequency (gnomAD popmax): 0.000164
+• In-silico summary: CADD=6; SIFT=D; PolyPhen=B; MetaLR=0.061(T); FATHMM=0.11(N); AlphaMissense=0.0689
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Glu242Asp
+• Allele frequency (gnomAD popmax): 0.000165
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.24(T); FATHMM=0.47(N); AlphaMissense=0.0898
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro136Ser
+• Allele frequency (gnomAD popmax): 0.000357
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=D; MetaLR=0.17(T); FATHMM=0.47(N); AlphaMissense=0.396
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Val461Ala
+• Allele frequency (gnomAD popmax): 0.000493
+• In-silico summary: CADD=2e+01; SIFT=NA; PolyPhen=B; MetaLR=0.19(T); FATHMM=0.2(N); AlphaMissense=0.198
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Val793Ile
+• Allele frequency (gnomAD popmax): 0.00125
+• In-silico summary: CADD=0.6; SIFT=T; PolyPhen=B; MetaLR=0.094(T); FATHMM=0.048(N); AlphaMissense=0.109
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ile3935Val
+• Allele frequency (gnomAD popmax): 0.00942
+• In-silico summary: CADD=1; SIFT=T; PolyPhen=B; MetaLR=0.059(T); FATHMM=0.082(N); AlphaMissense=0.0744
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Cys1099Trp
+• Allele frequency (gnomAD popmax): 0.000131
+• In-silico summary: CADD=0.3; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=NA(NA); AlphaMissense=0.16
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Asn521Asp
+• Allele frequency (gnomAD popmax): 0.000165
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=P; MetaLR=0.39(T); FATHMM=0.6(D); AlphaMissense=0.118
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Lys93Arg
+• Allele frequency (gnomAD popmax): 0.000691
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=P; MetaLR=0.034(T); FATHMM=0.56(D); AlphaMissense=0.0794
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ile903Asn
+• Allele frequency (gnomAD popmax): 0.000175
+• In-silico summary: CADD=0.002; SIFT=T; PolyPhen=NA; MetaLR=0.014(T); FATHMM=0.022(N); AlphaMissense=0.23
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro194Leu
+• Allele frequency (gnomAD popmax): 0.296
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0(T); FATHMM=0.4(N); AlphaMissense=0.0911
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Leu138Arg
+• Allele frequency (gnomAD popmax): 1
+• In-silico summary: CADD=0.2; SIFT=D; PolyPhen=NA; MetaLR=0(T); FATHMM=0.017(N); AlphaMissense=0.0599
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala480Pro
+• Allele frequency (gnomAD popmax): 0.408
+• In-silico summary: CADD=0.1; SIFT=T; PolyPhen=B; MetaLR=0(T); FATHMM=0.022(N); AlphaMissense=0.0588
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Met404Val
+• Allele frequency (gnomAD popmax): 0.182
+• In-silico summary: CADD=5; SIFT=T; PolyPhen=B; MetaLR=0(T); FATHMM=0.28(N); AlphaMissense=0.0694
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gly44Ser
+• Allele frequency (gnomAD popmax): 0.401
+• In-silico summary: CADD=1e+01; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=NA(NA); AlphaMissense=0.123
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gly2Arg
+• Allele frequency (gnomAD popmax): 0.244
+• In-silico summary: CADD=0.1; SIFT=T; PolyPhen=B; MetaLR=0(T); FATHMM=0.013(N); AlphaMissense=0.0677
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Thr133Asn
+• Allele frequency (gnomAD popmax): 0.0602
+• In-silico summary: CADD=1; SIFT=T; PolyPhen=D; MetaLR=0.082(T); FATHMM=0.021(N); AlphaMissense=0.194
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro351Leu
+• Allele frequency (gnomAD popmax): 0.0946
+• In-silico summary: CADD=0.7; SIFT=T; PolyPhen=B; MetaLR=0.027(T); FATHMM=0.029(N); AlphaMissense=0.0979
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.His120Arg
+• Allele frequency (gnomAD popmax): 0.536
+• In-silico summary: CADD=1; SIFT=T; PolyPhen=B; MetaLR=0.0026(T); FATHMM=0.034(N); AlphaMissense=0.105
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ala134Val
+• Allele frequency (gnomAD popmax): 0.154
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=B; MetaLR=0.0001(T); FATHMM=0.15(N); AlphaMissense=0.0684
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Cys3Arg
+• Allele frequency (gnomAD popmax): 1
+• In-silico summary: CADD=2; SIFT=T; PolyPhen=B; MetaLR=0(T); FATHMM=0.015(N); AlphaMissense=0.0822
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Val3805Ile
+• Allele frequency (gnomAD popmax): 0.858
+• In-silico summary: CADD=0.2; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=NA(NA); AlphaMissense=0.0559
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Pro313Leu
+• Allele frequency (gnomAD popmax): 0.308
+• In-silico summary: CADD=7; SIFT=D; PolyPhen=NA; MetaLR=0.0009(T); FATHMM=0.096(N); AlphaMissense=0.118
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Tyr43Cys
+• Allele frequency (gnomAD popmax): 0.146
+• In-silico summary: CADD=4; SIFT=NA; PolyPhen=NA; MetaLR=NA(NA); FATHMM=0.048(N); AlphaMissense=0.0857
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Ser33Asn
+• Allele frequency (gnomAD popmax): 0.0694
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=D; MetaLR=0.048(T); FATHMM=0.67(D); AlphaMissense=0.532
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gln5Glu
+• Allele frequency (gnomAD popmax): 0.1
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=D; MetaLR=0.0035(T); FATHMM=0.24(N); AlphaMissense=0.105
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Tyr25Cys
+• Allele frequency (gnomAD popmax): 0.429
+• In-silico summary: CADD=1e+01; SIFT=T; PolyPhen=B; MetaLR=0(T); FATHMM=0.015(N); AlphaMissense=0.0664
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Gln249Lys
+• Allele frequency (gnomAD popmax): 1
+• In-silico summary: CADD=7; SIFT=T; PolyPhen=B; MetaLR=0(T); FATHMM=0.12(N); AlphaMissense=0.0715
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Arg290His
+• Allele frequency (gnomAD popmax): 0.222
+• In-silico summary: CADD=3e+01; SIFT=D; PolyPhen=D; MetaLR=0.0015(T); FATHMM=0.8(D); AlphaMissense=0.122
+• PS1 evidence (ClinVar Mar-2025): yes  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+
+You are an expert clinical variant curator applying the ACMG/AMP guidelines.
+I will give you a single missense SNV with limited information:
+
+• HGVS (protein-level): p.Val200Met
+• Allele frequency (gnomAD popmax): 0.461
+• In-silico summary: CADD=2e+01; SIFT=T; PolyPhen=D; MetaLR=0(T); FATHMM=0.049(N); AlphaMissense=0.285
+• PS1 evidence (ClinVar Mar-2025): no  # "yes" or "no"
+
+Scope: Evaluate ONLY these five ACMG criteria and ignore all others:
+- PM2  (absent/ultra-rare in population databases)
+- PP3  (multiple in-silico tools support a deleterious effect)
+- PS1  (same amino-acid change as a known Pathogenic variant, but different DNA change)
+- BS1  (allele frequency is too high for the disorder)
+- BA1  (stand-alone benign frequency; very common)
+
+Tasks:
+1) Assign ONE final 5-tier ACMG label: "Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", or "Benign".
+2) Decide TRUE/FALSE for PM2, PP3, PS1, BS1, BA1 using only the information above.
+   - Set PS1 = true if and only if the PS1 evidence line is "yes"; otherwise PS1 = false.
+
+Return ONLY a single JSON object with this exact schema and lowercase booleans:
+
+{
+  "label": "<one of: Pathogenic|Likely Pathogenic|VUS|Likely Benign|Benign>",
+  "PM2": true/false,
+  "PP3": true/false,
+  "PS1": true/false,
+  "BS1": true/false,
+  "BA1": true/false,
+  "rationale": "<one short paragraph explaining your choices>"
+}
+
+Do not include any extra keys or any extra text before or after the JSON.
+
+
+------------------------------------------------------------
+

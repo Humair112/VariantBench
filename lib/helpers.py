@@ -55,6 +55,15 @@ BASE   = pathlib.Path(__file__).resolve().parents[1] / "data"
 DBNSFP = BASE / "dbNSFP5.2a_grch38.gz"   # 40 GB file
 
 # 1. Randomly sample X missense SNVs from dbNSFP
+def is_strict_missense(aa_change: str) -> bool:
+    """
+    Returns True for classic missense (single aa to single aa), e.g. 'p.Arg137His'.
+    Returns False for stopgain, indel, frameshift, splice, etc.
+    """
+    if pd.isna(aa_change):
+        return False
+    # Matches p.[A-Z][a-z]{2}[0-9]+[A-Z][a-z]{2}  (e.g., p.Gly137Arg)
+    return bool(re.match(r'^p\.[A-Z][a-z]{2}\d+[A-Z][a-z]{2}$', aa_change))
 
 def sample_missense(n_samples: int = 100) -> pd.DataFrame:
     """
@@ -105,10 +114,13 @@ ORDER BY random()
 LIMIT {n_samples}
 """
 
-
     df = con.execute(query).df()
-    return df
-
+    # Filter for strict missense:
+    filtered = df[df["aa_change"].apply(is_strict_missense)]
+    non_missense = df[~df["aa_change"].apply(is_strict_missense)]
+    if len(non_missense) > 0:
+        print("WARNING: Non-missense variants detected (excluded):\n", non_missense[["chrom","pos","aa_change"]])
+    return filtered
 
 # 2. ACMG rule functions
 def PM2(af_popmax: float | None) -> bool:
