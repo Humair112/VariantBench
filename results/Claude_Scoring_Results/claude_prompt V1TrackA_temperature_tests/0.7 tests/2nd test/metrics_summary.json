@@ -1,0 +1,8 @@
+{
+  "n_variants": 100,
+  "label_accuracy": 0.22,
+  "label_mcc": 0.0346,
+  "flags_micro_f1": 0.66,
+  "flags_macro_f1": 0.6244,
+  "faithfulness_v1": 0.424
+}

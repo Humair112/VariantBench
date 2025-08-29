@@ -1,0 +1,6 @@
+,Benign,Likely Benign,Likely Pathogenic,Pathogenic,VUS
+Benign,20,0,0,0,0
+Likely Benign,3,6,0,0,11
+Likely Pathogenic,0,0,6,0,14
+Pathogenic,0,0,5,0,15
+VUS,0,0,0,0,20

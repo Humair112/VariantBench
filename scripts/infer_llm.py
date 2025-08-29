@@ -42,7 +42,7 @@ except Exception:
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RESULTS = ROOT / "results"
-PROMPTS_JSONL = RESULTS / "variantbench_100_prompts.jsonl"
+PROMPTS_JSONL = RESULTS / "prompts/variantbench_100_prompts_trackA.jsonl"
 
 CONTEXT_LIMIT = 4096  
 OUTPUT_TOKEN_HARD_CAP = 4500 
@@ -259,7 +259,7 @@ def main():
     parsed_out = OUTDIR / f"{prefix}{track}_parsed.jsonl"
 
     client = LLMClient(provider=args.provider, model=args.model,
-                       endpoint=args.endpoint, temperature=0.0)
+                       endpoint=args.endpoint, temperature=0.7)
 
     raw_rows    = []
     parsed_rows = []

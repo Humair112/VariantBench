@@ -1,0 +1,501 @@
+variant_id,criterion,flag_pred,faithful,note
+1-12861721-C-T,pm2,True,False,needs AF < 1e-4 referenced
+1-12861721-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+1-12861721-C-T,ps1,False,False,should state no same-change pathogenic precedent
+1-12861721-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+1-12861721-C-T,ba1,False,False,should note AF < 5e-3
+1-1332271-G-A,pm2,False,True,should note AF >= 1e-4
+1-1332271-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+1-1332271-G-A,ps1,False,False,should state no same-change pathogenic precedent
+1-1332271-G-A,bs1,True,False,needs AF between 1e-4 and 5e-3
+1-1332271-G-A,ba1,False,False,should note AF < 5e-3
+1-151721576-G-A,pm2,True,False,needs AF < 1e-4 referenced
+1-151721576-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+1-151721576-G-A,ps1,False,False,should state no same-change pathogenic precedent
+1-151721576-G-A,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+1-151721576-G-A,ba1,False,True,should note AF < 5e-3
+1-156944016-C-A,pm2,True,True,needs AF < 1e-4 referenced
+1-156944016-C-A,pp3,False,False,should explain CADD<=25 or <4 tools
+1-156944016-C-A,ps1,False,False,should state no same-change pathogenic precedent
+1-156944016-C-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+1-156944016-C-A,ba1,False,True,should note AF < 5e-3
+1-163328868-C-T,pm2,True,False,needs AF < 1e-4 referenced
+1-163328868-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+1-163328868-C-T,ps1,False,False,should state no same-change pathogenic precedent
+1-163328868-C-T,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+1-163328868-C-T,ba1,False,True,should note AF < 5e-3
+1-180941126-A-C,pm2,True,True,needs AF < 1e-4 referenced
+1-180941126-A-C,pp3,False,False,should explain CADD<=25 or <4 tools
+1-180941126-A-C,ps1,False,False,should state no same-change pathogenic precedent
+1-180941126-A-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+1-180941126-A-C,ba1,False,True,should note AF < 5e-3
+1-228350909-T-G,pm2,True,False,needs AF < 1e-4 referenced
+1-228350909-T-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+1-228350909-T-G,ps1,True,False,needs explicit same AA change precedent
+1-228350909-T-G,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+1-228350909-T-G,ba1,False,True,should note AF < 5e-3
+1-245609395-G-A,pm2,True,True,needs AF < 1e-4 referenced
+1-245609395-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+1-245609395-G-A,ps1,False,False,should state no same-change pathogenic precedent
+1-245609395-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+1-245609395-G-A,ba1,False,True,should note AF < 5e-3
+1-31793423-G-A,pm2,True,True,needs AF < 1e-4 referenced
+1-31793423-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+1-31793423-G-A,ps1,False,False,should state no same-change pathogenic precedent
+1-31793423-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+1-31793423-G-A,ba1,False,True,should note AF < 5e-3
+1-43309487-A-G,pm2,True,True,needs AF < 1e-4 referenced
+1-43309487-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+1-43309487-A-G,ps1,False,False,should state no same-change pathogenic precedent
+1-43309487-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+1-43309487-A-G,ba1,False,True,should note AF < 5e-3
+1-64777979-T-G,pm2,True,True,needs AF < 1e-4 referenced
+1-64777979-T-G,pp3,False,False,should explain CADD<=25 or <4 tools
+1-64777979-T-G,ps1,False,False,should state no same-change pathogenic precedent
+1-64777979-T-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+1-64777979-T-G,ba1,False,True,should note AF < 5e-3
+10-114300507-A-G,pm2,False,True,should note AF >= 1e-4
+10-114300507-A-G,pp3,False,False,should explain CADD<=25 or <4 tools
+10-114300507-A-G,ps1,False,False,should state no same-change pathogenic precedent
+10-114300507-A-G,bs1,True,False,needs AF between 1e-4 and 5e-3
+10-114300507-A-G,ba1,False,False,should note AF < 5e-3
+10-5878275-G-T,pm2,True,True,needs AF < 1e-4 referenced
+10-5878275-G-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+10-5878275-G-T,ps1,False,False,should state no same-change pathogenic precedent
+10-5878275-G-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+10-5878275-G-T,ba1,False,True,should note AF < 5e-3
+10-79611973-C-G,pm2,False,True,should note AF >= 1e-4
+10-79611973-C-G,pp3,False,False,should explain CADD<=25 or <4 tools
+10-79611973-C-G,ps1,False,False,should state no same-change pathogenic precedent
+10-79611973-C-G,bs1,True,False,needs AF between 1e-4 and 5e-3
+10-79611973-C-G,ba1,False,False,should note AF < 5e-3
+10-86960010-A-C,pm2,True,True,needs AF < 1e-4 referenced
+10-86960010-A-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+10-86960010-A-C,ps1,False,False,should state no same-change pathogenic precedent
+10-86960010-A-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+10-86960010-A-C,ba1,False,True,should note AF < 5e-3
+11-113395002-G-A,pm2,True,False,needs AF < 1e-4 referenced
+11-113395002-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+11-113395002-G-A,ps1,False,False,should state no same-change pathogenic precedent
+11-113395002-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+11-113395002-G-A,ba1,False,False,should note AF < 5e-3
+11-118468830-C-T,pm2,True,True,needs AF < 1e-4 referenced
+11-118468830-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+11-118468830-C-T,ps1,False,False,should state no same-change pathogenic precedent
+11-118468830-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+11-118468830-C-T,ba1,False,True,should note AF < 5e-3
+11-126204286-T-G,pm2,True,True,needs AF < 1e-4 referenced
+11-126204286-T-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+11-126204286-T-G,ps1,False,False,should state no same-change pathogenic precedent
+11-126204286-T-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+11-126204286-T-G,ba1,False,True,should note AF < 5e-3
+11-47590435-G-C,pm2,True,True,needs AF < 1e-4 referenced
+11-47590435-G-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+11-47590435-G-C,ps1,False,False,should state no same-change pathogenic precedent
+11-47590435-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+11-47590435-G-C,ba1,False,True,should note AF < 5e-3
+11-57313574-G-C,pm2,True,False,needs AF < 1e-4 referenced
+11-57313574-G-C,pp3,False,False,should explain CADD<=25 or <4 tools
+11-57313574-G-C,ps1,False,False,should state no same-change pathogenic precedent
+11-57313574-G-C,bs1,True,False,needs AF between 1e-4 and 5e-3
+11-57313574-G-C,ba1,False,False,should note AF < 5e-3
+11-6402580-C-T,pm2,True,True,needs AF < 1e-4 referenced
+11-6402580-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+11-6402580-C-T,ps1,False,False,should state no same-change pathogenic precedent
+11-6402580-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+11-6402580-C-T,ba1,False,True,should note AF < 5e-3
+11-83168719-C-T,pm2,True,False,needs AF < 1e-4 referenced
+11-83168719-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+11-83168719-C-T,ps1,False,False,should state no same-change pathogenic precedent
+11-83168719-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+11-83168719-C-T,ba1,False,False,should note AF < 5e-3
+11-88604864-C-T,pm2,True,True,needs AF < 1e-4 referenced
+11-88604864-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+11-88604864-C-T,ps1,False,False,should state no same-change pathogenic precedent
+11-88604864-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+11-88604864-C-T,ba1,False,True,should note AF < 5e-3
+12-100540762-A-C,pm2,True,True,needs AF < 1e-4 referenced
+12-100540762-A-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+12-100540762-A-C,ps1,False,False,should state no same-change pathogenic precedent
+12-100540762-A-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+12-100540762-A-C,ba1,False,True,should note AF < 5e-3
+12-121524696-G-A,pm2,True,False,needs AF < 1e-4 referenced
+12-121524696-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+12-121524696-G-A,ps1,False,False,should state no same-change pathogenic precedent
+12-121524696-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+12-121524696-G-A,ba1,False,False,should note AF < 5e-3
+12-52473260-G-C,pm2,True,True,needs AF < 1e-4 referenced
+12-52473260-G-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+12-52473260-G-C,ps1,False,False,should state no same-change pathogenic precedent
+12-52473260-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+12-52473260-G-C,ba1,False,True,should note AF < 5e-3
+12-69350234-C-A,pm2,True,False,needs AF < 1e-4 referenced
+12-69350234-C-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+12-69350234-C-A,ps1,False,False,should state no same-change pathogenic precedent
+12-69350234-C-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+12-69350234-C-A,ba1,False,False,should note AF < 5e-3
+13-95552897-C-G,pm2,True,True,needs AF < 1e-4 referenced
+13-95552897-C-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+13-95552897-C-G,ps1,False,False,should state no same-change pathogenic precedent
+13-95552897-C-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+13-95552897-C-G,ba1,False,True,should note AF < 5e-3
+14-91272944-T-C,pm2,True,False,needs AF < 1e-4 referenced
+14-91272944-T-C,pp3,False,False,should explain CADD<=25 or <4 tools
+14-91272944-T-C,ps1,False,False,should state no same-change pathogenic precedent
+14-91272944-T-C,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+14-91272944-T-C,ba1,False,True,should note AF < 5e-3
+15-41837100-A-G,pm2,True,False,needs AF < 1e-4 referenced
+15-41837100-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+15-41837100-A-G,ps1,False,False,should state no same-change pathogenic precedent
+15-41837100-A-G,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+15-41837100-A-G,ba1,False,True,should note AF < 5e-3
+15-49033060-A-G,pm2,True,True,needs AF < 1e-4 referenced
+15-49033060-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+15-49033060-A-G,ps1,False,False,should state no same-change pathogenic precedent
+15-49033060-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+15-49033060-A-G,ba1,False,True,should note AF < 5e-3
+15-90262023-C-T,pm2,True,True,needs AF < 1e-4 referenced
+15-90262023-C-T,pp3,False,False,should explain CADD<=25 or <4 tools
+15-90262023-C-T,ps1,False,False,should state no same-change pathogenic precedent
+15-90262023-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+15-90262023-C-T,ba1,False,True,should note AF < 5e-3
+16-1502971-A-G,pm2,True,True,needs AF < 1e-4 referenced
+16-1502971-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+16-1502971-A-G,ps1,False,False,should state no same-change pathogenic precedent
+16-1502971-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+16-1502971-A-G,ba1,False,True,should note AF < 5e-3
+16-27628717-A-G,pm2,True,True,needs AF < 1e-4 referenced
+16-27628717-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+16-27628717-A-G,ps1,False,False,should state no same-change pathogenic precedent
+16-27628717-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+16-27628717-A-G,ba1,False,True,should note AF < 5e-3
+16-28873780-G-A,pm2,True,True,needs AF < 1e-4 referenced
+16-28873780-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+16-28873780-G-A,ps1,False,False,should state no same-change pathogenic precedent
+16-28873780-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+16-28873780-G-A,ba1,False,True,should note AF < 5e-3
+16-29744776-C-T,pm2,True,True,needs AF < 1e-4 referenced
+16-29744776-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+16-29744776-C-T,ps1,False,False,should state no same-change pathogenic precedent
+16-29744776-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+16-29744776-C-T,ba1,False,True,should note AF < 5e-3
+16-47454060-T-C,pm2,True,False,needs AF < 1e-4 referenced
+16-47454060-T-C,pp3,False,False,should explain CADD<=25 or <4 tools
+16-47454060-T-C,ps1,False,False,should state no same-change pathogenic precedent
+16-47454060-T-C,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+16-47454060-T-C,ba1,False,True,should note AF < 5e-3
+17-60044023-T-C,pm2,True,False,needs AF < 1e-4 referenced
+17-60044023-T-C,pp3,False,False,should explain CADD<=25 or <4 tools
+17-60044023-T-C,ps1,False,False,should state no same-change pathogenic precedent
+17-60044023-T-C,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+17-60044023-T-C,ba1,False,True,should note AF < 5e-3
+17-74958190-G-T,pm2,True,False,needs AF < 1e-4 referenced
+17-74958190-G-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+17-74958190-G-T,ps1,False,False,should state no same-change pathogenic precedent
+17-74958190-G-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+17-74958190-G-T,ba1,False,True,should note AF < 5e-3
+17-8262941-G-C,pm2,True,True,needs AF < 1e-4 referenced
+17-8262941-G-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+17-8262941-G-C,ps1,False,False,should state no same-change pathogenic precedent
+17-8262941-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+17-8262941-G-C,ba1,False,True,should note AF < 5e-3
+18-357441-C-T,pm2,True,True,needs AF < 1e-4 referenced
+18-357441-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+18-357441-C-T,ps1,False,False,should state no same-change pathogenic precedent
+18-357441-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+18-357441-C-T,ba1,False,True,should note AF < 5e-3
+18-45866898-G-A,pm2,True,False,needs AF < 1e-4 referenced
+18-45866898-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+18-45866898-G-A,ps1,False,False,should state no same-change pathogenic precedent
+18-45866898-G-A,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+18-45866898-G-A,ba1,False,True,should note AF < 5e-3
+19-12077092-G-A,pm2,True,False,needs AF < 1e-4 referenced
+19-12077092-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+19-12077092-G-A,ps1,False,False,should state no same-change pathogenic precedent
+19-12077092-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-12077092-G-A,ba1,False,False,should note AF < 5e-3
+19-14161530-C-T,pm2,True,False,needs AF < 1e-4 referenced
+19-14161530-C-T,pp3,False,False,should explain CADD<=25 or <4 tools
+19-14161530-C-T,ps1,False,False,should state no same-change pathogenic precedent
+19-14161530-C-T,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+19-14161530-C-T,ba1,False,True,should note AF < 5e-3
+19-16815256-A-T,pm2,False,True,should note AF >= 1e-4
+19-16815256-A-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-16815256-A-T,ps1,False,False,should state no same-change pathogenic precedent
+19-16815256-A-T,bs1,True,False,needs AF between 1e-4 and 5e-3
+19-16815256-A-T,ba1,False,False,should note AF < 5e-3
+19-17527318-G-A,pm2,True,True,needs AF < 1e-4 referenced
+19-17527318-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+19-17527318-G-A,ps1,False,False,should state no same-change pathogenic precedent
+19-17527318-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-17527318-G-A,ba1,False,True,should note AF < 5e-3
+19-18668365-A-G,pm2,True,True,needs AF < 1e-4 referenced
+19-18668365-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-18668365-A-G,ps1,False,False,should state no same-change pathogenic precedent
+19-18668365-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-18668365-A-G,ba1,False,True,should note AF < 5e-3
+19-22759533-G-A,pm2,True,False,needs AF < 1e-4 referenced
+19-22759533-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+19-22759533-G-A,ps1,False,False,should state no same-change pathogenic precedent
+19-22759533-G-A,bs1,True,False,needs AF between 1e-4 and 5e-3
+19-22759533-G-A,ba1,False,False,should note AF < 5e-3
+19-36103013-T-G,pm2,True,False,needs AF < 1e-4 referenced
+19-36103013-T-G,pp3,False,False,should explain CADD<=25 or <4 tools
+19-36103013-T-G,ps1,True,False,needs explicit same AA change precedent
+19-36103013-T-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-36103013-T-G,ba1,False,False,should note AF < 5e-3
+19-37242536-C-G,pm2,True,False,needs AF < 1e-4 referenced
+19-37242536-C-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-37242536-C-G,ps1,False,False,should state no same-change pathogenic precedent
+19-37242536-C-G,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+19-37242536-C-G,ba1,False,True,should note AF < 5e-3
+19-408099-C-G,pm2,True,True,needs AF < 1e-4 referenced
+19-408099-C-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-408099-C-G,ps1,False,False,should state no same-change pathogenic precedent
+19-408099-C-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-408099-C-G,ba1,False,True,should note AF < 5e-3
+19-4511231-T-C,pm2,True,False,needs AF < 1e-4 referenced
+19-4511231-T-C,pp3,False,False,should explain CADD<=25 or <4 tools
+19-4511231-T-C,ps1,False,False,should state no same-change pathogenic precedent
+19-4511231-T-C,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+19-4511231-T-C,ba1,False,True,should note AF < 5e-3
+19-46305114-C-T,pm2,True,False,needs AF < 1e-4 referenced
+19-46305114-C-T,pp3,False,False,should explain CADD<=25 or <4 tools
+19-46305114-C-T,ps1,False,False,should state no same-change pathogenic precedent
+19-46305114-C-T,bs1,True,False,needs AF between 1e-4 and 5e-3
+19-46305114-C-T,ba1,False,False,should note AF < 5e-3
+19-51003248-C-T,pm2,True,True,needs AF < 1e-4 referenced
+19-51003248-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-51003248-C-T,ps1,False,False,should state no same-change pathogenic precedent
+19-51003248-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-51003248-C-T,ba1,False,True,should note AF < 5e-3
+19-55579429-G-A,pm2,True,True,needs AF < 1e-4 referenced
+19-55579429-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-55579429-G-A,ps1,False,False,should state no same-change pathogenic precedent
+19-55579429-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-55579429-G-A,ba1,False,True,should note AF < 5e-3
+19-56664799-C-T,pm2,True,True,needs AF < 1e-4 referenced
+19-56664799-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-56664799-C-T,ps1,False,False,should state no same-change pathogenic precedent
+19-56664799-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-56664799-C-T,ba1,False,True,should note AF < 5e-3
+19-8421945-G-C,pm2,True,True,needs AF < 1e-4 referenced
+19-8421945-G-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+19-8421945-G-C,ps1,False,False,should state no same-change pathogenic precedent
+19-8421945-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+19-8421945-G-C,ba1,False,True,should note AF < 5e-3
+2-11596179-G-A,pm2,False,True,should note AF >= 1e-4
+2-11596179-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+2-11596179-G-A,ps1,False,False,should state no same-change pathogenic precedent
+2-11596179-G-A,bs1,True,False,needs AF between 1e-4 and 5e-3
+2-11596179-G-A,ba1,False,False,should note AF < 5e-3
+2-165370291-A-G,pm2,True,True,needs AF < 1e-4 referenced
+2-165370291-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+2-165370291-A-G,ps1,False,False,should state no same-change pathogenic precedent
+2-165370291-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+2-165370291-A-G,ba1,False,True,should note AF < 5e-3
+2-185804425-T-A,pm2,True,True,needs AF < 1e-4 referenced
+2-185804425-T-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+2-185804425-T-A,ps1,False,False,should state no same-change pathogenic precedent
+2-185804425-T-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+2-185804425-T-A,ba1,False,True,should note AF < 5e-3
+2-233713664-C-T,pm2,True,False,needs AF < 1e-4 referenced
+2-233713664-C-T,pp3,False,False,should explain CADD<=25 or <4 tools
+2-233713664-C-T,ps1,False,False,should state no same-change pathogenic precedent
+2-233713664-C-T,bs1,True,False,needs AF between 1e-4 and 5e-3
+2-233713664-C-T,ba1,False,False,should note AF < 5e-3
+2-55026420-T-C,pm2,True,False,needs AF < 1e-4 referenced
+2-55026420-T-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+2-55026420-T-C,ps1,False,False,should state no same-change pathogenic precedent
+2-55026420-T-C,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+2-55026420-T-C,ba1,False,True,should note AF < 5e-3
+2-68293948-C-G,pm2,True,True,needs AF < 1e-4 referenced
+2-68293948-C-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+2-68293948-C-G,ps1,False,False,should state no same-change pathogenic precedent
+2-68293948-C-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+2-68293948-C-G,ba1,False,True,should note AF < 5e-3
+20-17952709-C-T,pm2,True,True,needs AF < 1e-4 referenced
+20-17952709-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+20-17952709-C-T,ps1,False,False,should state no same-change pathogenic precedent
+20-17952709-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+20-17952709-C-T,ba1,False,True,should note AF < 5e-3
+22-30949817-A-T,pm2,True,True,needs AF < 1e-4 referenced
+22-30949817-A-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+22-30949817-A-T,ps1,False,False,should state no same-change pathogenic precedent
+22-30949817-A-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+22-30949817-A-T,ba1,False,True,should note AF < 5e-3
+22-35338765-G-C,pm2,True,True,needs AF < 1e-4 referenced
+22-35338765-G-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+22-35338765-G-C,ps1,False,False,should state no same-change pathogenic precedent
+22-35338765-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+22-35338765-G-C,ba1,False,True,should note AF < 5e-3
+3-122700268-G-A,pm2,True,True,needs AF < 1e-4 referenced
+3-122700268-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-122700268-G-A,ps1,False,False,should state no same-change pathogenic precedent
+3-122700268-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+3-122700268-G-A,ba1,False,True,should note AF < 5e-3
+3-127016651-T-C,pm2,True,True,needs AF < 1e-4 referenced
+3-127016651-T-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-127016651-T-C,ps1,False,False,should state no same-change pathogenic precedent
+3-127016651-T-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+3-127016651-T-C,ba1,False,True,should note AF < 5e-3
+3-151447636-A-T,pm2,True,False,needs AF < 1e-4 referenced
+3-151447636-A-T,pp3,False,False,should explain CADD<=25 or <4 tools
+3-151447636-A-T,ps1,False,False,should state no same-change pathogenic precedent
+3-151447636-A-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+3-151447636-A-T,ba1,False,True,should note AF < 5e-3
+3-180935185-C-T,pm2,True,True,needs AF < 1e-4 referenced
+3-180935185-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-180935185-C-T,ps1,False,False,should state no same-change pathogenic precedent
+3-180935185-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+3-180935185-C-T,ba1,False,True,should note AF < 5e-3
+3-185821034-C-T,pm2,True,False,needs AF < 1e-4 referenced
+3-185821034-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-185821034-C-T,ps1,False,False,should state no same-change pathogenic precedent
+3-185821034-C-T,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+3-185821034-C-T,ba1,False,True,should note AF < 5e-3
+3-193489773-A-G,pm2,True,False,needs AF < 1e-4 referenced
+3-193489773-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-193489773-A-G,ps1,False,False,should state no same-change pathogenic precedent
+3-193489773-A-G,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+3-193489773-A-G,ba1,False,True,should note AF < 5e-3
+3-39184325-C-A,pm2,True,False,needs AF < 1e-4 referenced
+3-39184325-C-A,pp3,False,False,should explain CADD<=25 or <4 tools
+3-39184325-C-A,ps1,False,False,should state no same-change pathogenic precedent
+3-39184325-C-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+3-39184325-C-A,ba1,False,False,should note AF < 5e-3
+3-43598637-C-T,pm2,True,True,needs AF < 1e-4 referenced
+3-43598637-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-43598637-C-T,ps1,True,True,needs explicit same AA change precedent
+3-43598637-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+3-43598637-C-T,ba1,False,True,should note AF < 5e-3
+3-44644000-C-A,pm2,True,False,needs AF < 1e-4 referenced
+3-44644000-C-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-44644000-C-A,ps1,False,False,should state no same-change pathogenic precedent
+3-44644000-C-A,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+3-44644000-C-A,ba1,False,True,should note AF < 5e-3
+3-51933551-G-C,pm2,True,True,needs AF < 1e-4 referenced
+3-51933551-G-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+3-51933551-G-C,ps1,False,False,should state no same-change pathogenic precedent
+3-51933551-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+3-51933551-G-C,ba1,False,True,should note AF < 5e-3
+4-148154845-G-C,pm2,True,True,needs AF < 1e-4 referenced
+4-148154845-G-C,pp3,False,False,should explain CADD<=25 or <4 tools
+4-148154845-G-C,ps1,False,False,should state no same-change pathogenic precedent
+4-148154845-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+4-148154845-G-C,ba1,False,True,should note AF < 5e-3
+4-176193500-C-G,pm2,True,True,needs AF < 1e-4 referenced
+4-176193500-C-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+4-176193500-C-G,ps1,False,False,should state no same-change pathogenic precedent
+4-176193500-C-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+4-176193500-C-G,ba1,False,True,should note AF < 5e-3
+5-128442304-G-A,pm2,True,False,needs AF < 1e-4 referenced
+5-128442304-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+5-128442304-G-A,ps1,False,False,should state no same-change pathogenic precedent
+5-128442304-G-A,bs1,True,False,needs AF between 1e-4 and 5e-3
+5-128442304-G-A,ba1,False,False,should note AF < 5e-3
+5-141179785-G-A,pm2,True,True,needs AF < 1e-4 referenced
+5-141179785-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+5-141179785-G-A,ps1,False,False,should state no same-change pathogenic precedent
+5-141179785-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+5-141179785-G-A,ba1,False,True,should note AF < 5e-3
+5-141183515-T-A,pm2,True,True,needs AF < 1e-4 referenced
+5-141183515-T-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+5-141183515-T-A,ps1,False,False,should state no same-change pathogenic precedent
+5-141183515-T-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+5-141183515-T-A,ba1,False,True,should note AF < 5e-3
+5-180992816-A-G,pm2,True,True,needs AF < 1e-4 referenced
+5-180992816-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+5-180992816-A-G,ps1,False,False,should state no same-change pathogenic precedent
+5-180992816-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+5-180992816-A-G,ba1,False,True,should note AF < 5e-3
+5-31541336-C-T,pm2,True,True,needs AF < 1e-4 referenced
+5-31541336-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+5-31541336-C-T,ps1,False,False,should state no same-change pathogenic precedent
+5-31541336-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+5-31541336-C-T,ba1,False,True,should note AF < 5e-3
+5-79730716-A-C,pm2,False,True,should note AF >= 1e-4
+5-79730716-A-C,pp3,False,False,should explain CADD<=25 or <4 tools
+5-79730716-A-C,ps1,False,False,should state no same-change pathogenic precedent
+5-79730716-A-C,bs1,True,False,needs AF between 1e-4 and 5e-3
+5-79730716-A-C,ba1,False,False,should note AF < 5e-3
+6-154833181-G-T,pm2,True,False,needs AF < 1e-4 referenced
+6-154833181-G-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+6-154833181-G-T,ps1,False,False,should state no same-change pathogenic precedent
+6-154833181-G-T,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+6-154833181-G-T,ba1,False,True,should note AF < 5e-3
+6-168652977-A-G,pm2,True,True,needs AF < 1e-4 referenced
+6-168652977-A-G,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+6-168652977-A-G,ps1,False,False,should state no same-change pathogenic precedent
+6-168652977-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+6-168652977-A-G,ba1,False,True,should note AF < 5e-3
+6-24504911-G-A,pm2,True,False,needs AF < 1e-4 referenced
+6-24504911-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+6-24504911-G-A,ps1,False,False,should state no same-change pathogenic precedent
+6-24504911-G-A,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+6-24504911-G-A,ba1,False,True,should note AF < 5e-3
+6-43603976-A-C,pm2,True,True,needs AF < 1e-4 referenced
+6-43603976-A-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+6-43603976-A-C,ps1,False,False,should state no same-change pathogenic precedent
+6-43603976-A-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+6-43603976-A-C,ba1,False,True,should note AF < 5e-3
+6-49786533-C-T,pm2,True,True,needs AF < 1e-4 referenced
+6-49786533-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+6-49786533-C-T,ps1,False,False,should state no same-change pathogenic precedent
+6-49786533-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+6-49786533-C-T,ba1,False,True,should note AF < 5e-3
+7-142167406-G-A,pm2,True,False,needs AF < 1e-4 referenced
+7-142167406-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+7-142167406-G-A,ps1,False,False,should state no same-change pathogenic precedent
+7-142167406-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+7-142167406-G-A,ba1,False,False,should note AF < 5e-3
+7-143960229-G-A,pm2,True,False,needs AF < 1e-4 referenced
+7-143960229-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+7-143960229-G-A,ps1,False,False,should state no same-change pathogenic precedent
+7-143960229-G-A,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+7-143960229-G-A,ba1,False,True,should note AF < 5e-3
+7-27184990-G-A,pm2,True,True,needs AF < 1e-4 referenced
+7-27184990-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+7-27184990-G-A,ps1,False,False,should state no same-change pathogenic precedent
+7-27184990-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+7-27184990-G-A,ba1,False,True,should note AF < 5e-3
+7-45575112-T-C,pm2,True,True,needs AF < 1e-4 referenced
+7-45575112-T-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+7-45575112-T-C,ps1,False,False,should state no same-change pathogenic precedent
+7-45575112-T-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+7-45575112-T-C,ba1,False,True,should note AF < 5e-3
+7-6003982-G-A,pm2,True,False,needs AF < 1e-4 referenced
+7-6003982-G-A,pp3,False,False,should explain CADD<=25 or <4 tools
+7-6003982-G-A,ps1,False,False,should state no same-change pathogenic precedent
+7-6003982-G-A,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+7-6003982-G-A,ba1,False,True,should note AF < 5e-3
+8-123183119-C-T,pm2,True,False,needs AF < 1e-4 referenced
+8-123183119-C-T,pp3,False,False,should explain CADD<=25 or <4 tools
+8-123183119-C-T,ps1,False,False,should state no same-change pathogenic precedent
+8-123183119-C-T,bs1,False,False,"should note AF outside [1e-4,5e-3)"
+8-123183119-C-T,ba1,False,True,should note AF < 5e-3
+8-124486566-G-A,pm2,True,True,needs AF < 1e-4 referenced
+8-124486566-G-A,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+8-124486566-G-A,ps1,False,False,should state no same-change pathogenic precedent
+8-124486566-G-A,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+8-124486566-G-A,ba1,False,True,should note AF < 5e-3
+8-17675195-C-T,pm2,True,True,needs AF < 1e-4 referenced
+8-17675195-C-T,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+8-17675195-C-T,ps1,True,True,needs explicit same AA change precedent
+8-17675195-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+8-17675195-C-T,ba1,False,True,should note AF < 5e-3
+9-92301665-C-T,pm2,True,False,needs AF < 1e-4 referenced
+9-92301665-C-T,pp3,False,False,should explain CADD<=25 or <4 tools
+9-92301665-C-T,ps1,False,False,should state no same-change pathogenic precedent
+9-92301665-C-T,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+9-92301665-C-T,ba1,False,False,should note AF < 5e-3
+X-106694140-A-G,pm2,True,False,needs AF < 1e-4 referenced
+X-106694140-A-G,pp3,False,False,should explain CADD<=25 or <4 tools
+X-106694140-A-G,ps1,False,False,should state no same-change pathogenic precedent
+X-106694140-A-G,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+X-106694140-A-G,ba1,False,False,should note AF < 5e-3
+X-151722730-G-C,pm2,True,True,needs AF < 1e-4 referenced
+X-151722730-G-C,pp3,True,False,needs CADD>25 and ≥4 damaging tools
+X-151722730-G-C,ps1,False,False,should state no same-change pathogenic precedent
+X-151722730-G-C,bs1,False,True,"should note AF outside [1e-4,5e-3)"
+X-151722730-G-C,ba1,False,True,should note AF < 5e-3

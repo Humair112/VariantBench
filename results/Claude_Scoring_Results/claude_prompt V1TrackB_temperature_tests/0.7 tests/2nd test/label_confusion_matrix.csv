@@ -1,0 +1,6 @@
+,pred_Pathogenic,pred_Likely pathogenic,pred_VUS,pred_Likely benign,pred_Benign
+true_Pathogenic,0,0,20,0,0
+true_Likely pathogenic,0,2,17,1,0
+true_VUS,0,1,17,2,0
+true_Likely benign,0,4,12,4,0
+true_Benign,0,0,9,11,0
