@@ -1,0 +1,108 @@
+variant,label_gold,label_llm,label_status,PM2_gold,PM2_llm,PM2_status,PP3_gold,PP3_llm,PP3_status,PS1_gold,PS1_llm,PS1_status,BS1_gold,BS1_llm,BS1_status,BA1_gold,BA1_llm,BA1_status
+7-94412602-G-A,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+17-75001380-G-A,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+12-3616958-C-T,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+10-49612084-T-A,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+11-55935674-A-G,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+5-32173810-C-G,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+11-17357001-G-A,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+19-10339550-A-G,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+3-165059910-T-C,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+12-22055488-C-T,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+2-70988680-G-A,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+16-57470324-C-T,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+20-13288621-G-A,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+14-58223783-C-T,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+6-6222120-G-A,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+5-109774799-T-C,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+19-12673239-T-G,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+1-225852688-T-C,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+8-27671065-C-T,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+1-68438951-C-T,Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+4-113903455-A-G,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+19-47319944-C-T,Likely Pathogenic,VUS,Mismatch,True,True,Correct,False,True,Mismatch,True,False,Mismatch,False,False,Correct,False,False,Correct
+1-152220023-C-G,Likely Pathogenic,VUS,Mismatch,True,True,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+6-96896803-G-C,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct
+8-142846424-A-C,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+13-50970030-G-A,Likely Pathogenic,VUS,Mismatch,True,True,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+2-79086891-C-A,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+11-55839451-A-T,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct
+9-71734882-G-C,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+4-41747425-G-A,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+9-34371175-G-C,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+6-73292008-G-C,Likely Pathogenic,VUS,Mismatch,True,True,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+5-129620687-G-T,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+9-127788226-G-A,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+14-20014746-A-G,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+8-23317015-C-T,Likely Pathogenic,VUS,Mismatch,True,True,Correct,False,True,Mismatch,True,False,Mismatch,False,False,Correct,False,False,Correct
+7-86839121-C-G,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+3-51393995-C-T,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+5-53065079-T-G,Likely Pathogenic,VUS,Mismatch,True,True,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+11-20601457-G-A,Likely Pathogenic,VUS,Mismatch,True,True,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct,False,False,Correct
+17-41065538-G-A,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+8-119102366-G-C,VUS,VUS,Correct,False,False,Correct,True,True,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct
+1-150151027-A-G,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+9-112890113-G-A,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+16-67156582-C-T,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+10-68645176-T-C,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+12-10909256-C-T,VUS,Likely Benign,Mismatch,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+1-231352888-C-A,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+4-71567019-C-T,VUS,VUS,Correct,True,True,Correct,False,True,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct
+6-47879879-T-G,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+12-27755268-G-T,VUS,Pathogenic,Mismatch,True,True,Correct,False,True,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct
+13-102731763-C-G,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+19-12792290-C-A,VUS,Pathogenic,Mismatch,True,True,Correct,False,True,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct
+14-104952646-C-A,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+14-87993419-T-G,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+7-1437974-G-C,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+5-129620645-C-A,VUS,VUS,Correct,True,True,Correct,False,True,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct
+18-36199769-A-C,VUS,VUS,Correct,False,False,Correct,True,True,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct
+10-100498785-T-C,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+7-7969495-G-C,VUS,VUS,Correct,True,True,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,False,Correct
+1-152776646-G-A,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+7-6692562-G-A,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+3-124913235-T-C,Likely Benign,Benign,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,True,Mismatch
+4-184712953-T-C,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct
+1-119937344-C-T,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+22-24628222-G-A,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+1-94043413-G-A,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+1-222627617-C-T,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+19-18264661-C-T,Likely Benign,VUS,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct
+5-69632946-T-A,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+7-6462998-C-T,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+1-160159474-G-C,Likely Benign,VUS,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct
+11-65125777-C-T,Likely Benign,VUS,Mismatch,False,False,Correct,False,True,Mismatch,False,False,Correct,True,False,Mismatch,False,False,Correct
+8-19962174-T-C,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+8-51409247-C-T,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+1-186117578-A-G,Likely Benign,Benign,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,True,Mismatch
+9-136274936-G-C,Likely Benign,VUS,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,False,Correct
+2-141049214-T-C,Likely Benign,VUS,Mismatch,False,False,Correct,False,True,Mismatch,False,False,Correct,True,False,Mismatch,False,False,Correct
+5-140342755-T-C,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+19-21972326-A-T,Likely Benign,Likely Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,True,True,Correct,False,False,Correct
+10-94355078-G-A,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+8-22625338-A-C,Benign,Benign,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,True,Mismatch,True,False,Mismatch
+7-1442465-C-G,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+9-106925122-A-G,Benign,Benign,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,True,Mismatch,True,True,Correct
+1-53737935-C-T,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+2-190534652-C-G,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+9-5233855-C-A,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+22-50744993-C-T,Benign,Benign,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,True,Mismatch,True,True,Correct
+12-11091871-T-C,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+9-19434982-C-T,Benign,Benign,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,True,Mismatch,True,True,Correct
+11-57380702-A-G,Benign,Likely Benign,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,False,Mismatch
+13-102739284-C-T,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+7-101196120-G-A,Benign,Benign,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,True,Mismatch,True,True,Correct
+12-66169323-T-C,Benign,Benign,Correct,False,False,Correct,False,False,Correct,True,False,Mismatch,False,True,Mismatch,True,True,Correct
+12-116737803-C-T,Benign,Benign,Correct,False,False,Correct,False,True,Mismatch,False,False,Correct,False,True,Mismatch,True,True,Correct
+22-41998831-C-G,Benign,Likely Benign,Mismatch,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,False,Mismatch
+17-41160618-T-C,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+12-82399008-C-A,Benign,Likely Benign,Mismatch,False,False,Correct,False,False,Correct,True,False,Mismatch,False,True,Mismatch,True,False,Mismatch
+19-19302283-C-T,Benign,Benign,Correct,False,False,Correct,True,True,Correct,True,False,Mismatch,False,True,Mismatch,True,True,Correct
+12-55637489-G-A,Benign,Benign,Correct,False,False,Correct,False,False,Correct,False,False,Correct,False,True,Mismatch,True,True,Correct
+
+==== METRICS ====
+Label Exact Match Accuracy: 0.470
+Label MCC: 0.407
+Flag Micro-F1: 0.842
+Flag Macro-F1: 0.641
+Faithfulness (numeric cues in rationale when flag True): 137/154 (89.0%)
